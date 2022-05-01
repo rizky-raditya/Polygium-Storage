@@ -10,7 +10,7 @@ const ipfs = window.IpfsHttpClient('infura-ipfs.io', '5001', { protocol: 'https'
                 ipfs.add(magic_array_buffer_converted_to_buffer, (err, result) => {
                     console.log(err, result);
 
-                    let ipfsLink = "<a target='_blank' href='https://dweb.link/ipfs/" + result[0].hash + "'>https://dweb.link/ipfs/" + result[0].hash +  "</a><br><a target='_blank' href='https://ipfs.infura.io/ipfs/" + result[0].hash + "'>https://ipfs.infura.io/ipfs/" + result[0].hash +  "</a><br><a target='_blank' href='https://cf-ipfs.com/ipfs/" + result[0].hash + "'>https://astyanax.io/ipfs/" + result[0].hash +  "</a>";
+                    let ipfsLink = "<a target='_blank' href='https://dweb.link/ipfs/" + result[0].hash + "'>https://dweb.link/ipfs/" + result[0].hash +  "</a><br><a target='_blank' href='https://ipfs.infura.io/ipfs/" + result[0].hash + "'>https://ipfs.infura.io/ipfs/" + result[0].hash +  "</a><br><a target='_blank' href='https://cf-ipfs.com/ipfs/" + result[0].hash + "'>https://cf-ipfs.com/ipfs/" + result[0].hash +  "</a>";
                     document.getElementById("link").innerHTML = ipfsLink;
 
                 })
